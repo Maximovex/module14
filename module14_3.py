@@ -8,7 +8,7 @@ from aiogram import F
 from aiogram.utils.keyboard import ReplyKeyboardBuilder, InlineKeyboardBuilder
 import asyncio
 
-api = '7780851910:AAFlpxho6e15lfa52eedHI8YiENQlLrQKQQ'
+api = ''
 
 bot = Bot(token=api)
 dp = Dispatcher()
