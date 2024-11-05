@@ -48,6 +48,10 @@ async def get_buying_list(message):
         await message.answer_photo(photo=img,caption=f'Название: Product {i} | Описание: описание {i} | Цена: {i * 100}')
     await message.answer('Выберите продукт для покупки:',reply_markup=products_kb)
 
+@dp.callback_query(F.data=='product_buying')
+async def send_confirm_message(callback):
+    await callback.message.answer('Вы успешно приобрели продукт!')
+
 @dp.message(F.text, Command('start'))
 async def start(message):
     await message.answer('Привет! Я бот помогающий твоему здоровью.',
