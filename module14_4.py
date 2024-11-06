@@ -12,7 +12,7 @@ from crud_functions import *
 
 products=get_all_products()
 
-api = '7780851910:AAFlpxho6e15lfa52eedHI8YiENQlLrQKQQ'
+api = ''
 
 bot = Bot(token=api)
 dp = Dispatcher()
